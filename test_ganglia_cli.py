@@ -2,7 +2,9 @@
 
 import unittest
 
-from .ganglia_cli import GMetric
+from ganglia_cli import GMetric
+
+ignore = ('E501',)
 
 
 class TestGMetric(unittest.TestCase):
@@ -44,8 +46,8 @@ class TestGMetric(unittest.TestCase):
             self.gmetric.pack(metric)
             metric = {'name': 'foo', 'type': 'uint8', 'value': 'bar', 'spoof': True, 'hostname': 'host'}
             self.gmetric.pack(metric)
-        except:
-            self.fail("Should not have raise exception")
+        except Exception:
+            self.fail("This should not raise an exception!!")
 
     def test_group(self):
         metric = {'name': 'foo', 'type': 'uint8', 'value': 'bar', 'group': 'test'}

@@ -10,6 +10,7 @@ setup(
     long_description=open('README.rst').read(),
     author='Timothée Peignier',
     author_email='timothee.peignier@tryphon.org',
+    url='https://github.com/sarnold/ganglia_cli',
     test_suite='ganglia_cli',
     classifiers=[
         'Intended Audience :: Developers',
