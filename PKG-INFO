@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: ganglia_cli
+Version: 0.3.0
+Summary: A Ganglia client
+Home-page: UNKNOWN
+Author: Timothée Peignier
+Author-email: timothee.peignier@tryphon.org
+License: MIT
+Description: =======
+        Ganglia
+        =======
+        
+        A library to send metric to Ganglia in python.
+        Supports UDP, multicast, group and spoofing.
+        
+        Installing
+        ==========
+        
+        To install : ::
+        
+            pip install ganglia
+        
+        
+        Usage
+        =====
+        
+        Sending metric over UDP: ::
+        
+            ganglia = GMetric("udp://127.0.0.1")
+            ganglia.send(
+                name='hits',
+                units='req/sec',
+                type='uint8',
+                value=200,
+                tmax=60,
+                dmax=300,
+                group='web'
+            )
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
