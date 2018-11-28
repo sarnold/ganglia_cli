@@ -1,22 +1,48 @@
-=======
-Ganglia
-=======
+===========
+Ganglia_cli
+===========
 
-A library to send metric to Ganglia in python.
+.. image:: https://img.shields.io/github/license/sarnold/ganglia_cli.svg
+    :target: https://github.com/sarnold/ganglia_cli
+    :alt: License
+
+.. image:: https://badge.fury.io/gh/sarnold%2Fganglia_cli.svg
+    :target: https://badge.fury.io/gh/sarnold%2Fganglia_cli
+    :alt: Version
+
+.. image:: https://travis-ci.org/sarnold/ganglia_cli.svg?branch=master
+    :target: https://travis-ci.org/sarnold/ganglia_cli
+    :alt: Build Status
+
+.. image:: https://codeclimate.com/github/sarnold/ganglia_cli/badges/gpa.svg
+    :target: https://codeclimate.com/github/sarnold/ganglia_cli
+    :alt: Code Climate
+
+.. image:: https://img.shields.io/github/issues/sarnold/ganglia_cli.svg
+    :target: https://github.com/sarnold/ganglia_cli/issues?q=is:issue+is:open
+    :alt: Issues
+
+.. image:: https://img.shields.io/github/issues-pr/sarnold/ganglia_cli.svg
+    :target: https://github.com/sarnold/ganglia_cli/issues?q=is:open+is:pr
+    :alt: Pull Requests
+
+A small Python library to send metrics to Ganglia from your Python code.
 Supports UDP, multicast, group and spoofing.
 
 Installing
 ==========
 
-To install this update, clone this repository, cd into it and run::
+To install this update, clone this repository and::
 
+  $ git clone https://github.com/sarnold/ganglia_cli
+  $ cd ganglia_cli
   $ python setup.py install
 
-To install the upstream package::
+To install the (original) upstream package::
 
   $ pip install ganglia
 
-Note this version may collide with other python modules named ``ganglia``.
+Note the upstream package may collide with other python modules named ``ganglia``.
 
 
 Usage
